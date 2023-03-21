@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😝</text></svg>">
 </head>
 
 <body>
@@ -51,138 +51,51 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 				
-      			
-          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='nerfsuper_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/nerf_supervision.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/nerf_supervision.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function nerfsuper_start() {
-                  document.getElementById('nerfsuper_image').style.opacity = "1";
-                }
+      	
+	    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()"  bgcolor="#ffffd0">
+	      <td style="padding:20px;width:25%;vertical-align:middle">
+		<div class="one">
+		  <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
+		  <source src="images/refnerf.mp4" type="video/mp4">
+		  Your browser does not support the video tag.
+		  </video></div>
+		  <img src='images/refnerf.jpg' width="160">
+		</div>
+		<script type="text/javascript">
+		  function refnerf_start() {
+		    document.getElementById('refnerf_image').style.opacity = "1";
+		  }
 
-                function nerfsuper_stop() {
-                  document.getElementById('nerfsuper_image').style.opacity = "0";
-                }
-                nerfsuper_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-							<a href="http://yenchenlin.me/nerf-supervision/">
-                <papertitle>NeRF-Supervision: Learning Dense Object Descriptors from Neural Radiance Fields</papertitle>
-              </a>
-              <br>
-              <a href="https://yenchenlin.me/">Lin Yen-Chen</a>, 
-              <a href="http://www.peteflorence.com/">Pete Florence</a>, 
-              <strong>Jonathan T. Barron</strong>,  <br>
-              <a href="https://scholar.google.com/citations?user=_BPdgV0AAAAJ&hl=en">Tsung-Yi Lin</a>, 
-              <a href="https://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a>,
-              <a href="http://web.mit.edu/phillipi/">Phillip Isola</a>
-              <br>
-              <em>ICRA</em>, 2022  
-              <br>
-							<a href="http://yenchenlin.me/nerf-supervision/">project page</a> / 
-							<a href="https://arxiv.org/abs/2203.01913">arXiv</a> / 
-							<a href="https://www.youtube.com/watch?v=_zN-wVwPH1s">video</a> /
-							<a href="https://github.com/yenchenlin/nerf-supervision-public">code</a> / 
-							<a href="https://colab.research.google.com/drive/13ISri5KD2XeEtsFs25hmZtKhxoDywB5y?usp=sharing">colab</a>				
-              <p></p>
-              <p>NeRF works better than RGB-D cameras or multi-view stereo when learning object descriptors.</p>
-            </td>
-          </tr>
-
-			    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()"  bgcolor="#ffffd0">
-			      <td style="padding:20px;width:25%;vertical-align:middle">
-			        <div class="one">
-			          <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
-			          <source src="images/refnerf.mp4" type="video/mp4">
-			          Your browser does not support the video tag.
-			          </video></div>
-			          <img src='images/refnerf.jpg' width="160">
-			        </div>
-			        <script type="text/javascript">
-			          function refnerf_start() {
-			            document.getElementById('refnerf_image').style.opacity = "1";
-			          }
-
-			          function refnerf_stop() {
-			            document.getElementById('refnerf_image').style.opacity = "0";
-			          }
-			          refnerf_stop()
-			        </script>
-			      </td>
-			            <td style="padding:20px;width:75%;vertical-align:middle">
-			          <a href="https://dorverbin.github.io/refnerf/index.html">
-			            <papertitle>Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields</papertitle>
-			          </a>
-			          <br>
-			          <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
-			          <a href="https://phogzone.com/">Peter Hedman</a>,
-			          <a href="https://bmild.github.io/">Ben Mildenhall</a>, <br>
-			          <a href="Todd Zickler">Todd Zickler</a>,
-			          <strong>Jonathan T. Barron</strong>,
-			          <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
-			          <br>
-			    <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation, Best Student Paper Honorable Mention)</strong></font>
-			          <br>
-			          <a href="https://dorverbin.github.io/refnerf/index.html">project page</a>
-			    /
-			          <a href="https://arxiv.org/abs/2112.03907">arXiv</a>
-			    /
-			          <a href="https://youtu.be/qrdRH9irAlk">video</a>
-			          <p></p>
-			          <p>Explicitly modeling reflections in NeRF produces realistic shiny surfaces and accurate surface normals, and lets you edit materials.</p>
-			        </td>
-			      </tr>
-						
-          <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='mip360_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/mip360_sat.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/mip360_sat.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function mip360_start() {
-                  document.getElementById('mip360_image').style.opacity = "1";
-                }
-
-                function mip360_stop() {
-                  document.getElementById('mip360_image').style.opacity = "0";
-                }
-                mip360_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://jonbarron.info/mipnerf360">
-                <papertitle>Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields</papertitle>
-              </a>
-              <br>
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-              <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
-              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-              <a href="https://phogzone.com/">Peter Hedman</a>
-              <br>
-							<em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-              <a href="http://jonbarron.info/mipnerf360">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2111.12077">arXiv</a>
-              /
-              <a href="https://youtu.be/zBSH-k9GbV4">video</a>
-              <p></p>
-              <p>mip-NeRF can be extended to produce realistic results on unbounded scenes.</p>
-            </td>
-          </tr> 
-
+		  function refnerf_stop() {
+		    document.getElementById('refnerf_image').style.opacity = "0";
+		  }
+		  refnerf_stop()
+		</script>
+	      </td>
+		    <td style="padding:20px;width:75%;vertical-align:middle">
+		  <a href="https://dorverbin.github.io/refnerf/index.html">
+		    <papertitle>Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields</papertitle>
+		  </a>
+		  <br>
+		  <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
+		  <a href="https://phogzone.com/">Peter Hedman</a>,
+		  <a href="https://bmild.github.io/">Ben Mildenhall</a>, <br>
+		  <a href="Todd Zickler">Todd Zickler</a>,
+		  <strong>Jonathan T. Barron</strong>,
+		  <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
+		  <br>
+	    <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation, Best Student Paper Honorable Mention)</strong></font>
+		  <br>
+		  <a href="https://dorverbin.github.io/refnerf/index.html">project page</a>
+	    /
+		  <a href="https://arxiv.org/abs/2112.03907">arXiv</a>
+	    /
+		  <a href="https://youtu.be/qrdRH9irAlk">video</a>
+		  <p></p>
+		  <p>Explicitly modeling reflections in NeRF produces realistic shiny surfaces and accurate surface normals, and lets you edit materials.</p>
+		</td>
+	      </tr>
+				
           <tr onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -226,216 +139,6 @@
 								Properly training NeRF on raw camera data enables HDR view synthesis and bokeh, and outperforms multi-image denoising.</p>
             </td>
           </tr> 
-					
-   
-          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/regnerf_after.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/regnerf_before.jpeg' width="160">
-              </div>
-              <script type="text/javascript">
-                function regnerf_start() {
-                  document.getElementById('regnerf_image').style.opacity = "1";
-                }
-
-                function regnerf_stop() {
-                  document.getElementById('regnerf_image').style.opacity = "0";
-                }
-                regnerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://m-niemeyer.github.io/regnerf/index.html">
-                <papertitle>RegNeRF: Regularizing Neural Radiance Fields for View Synthesis from Sparse Inputs</papertitle>
-              </a>
-              <br>
-              <a href="https://m-niemeyer.github.io/">Michael Niemeyer</a>,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://bmild.github.io/">Ben Mildenhall</a>, <br>
-              <a href="https://msmsajjadi.github.io/">Mehdi S. M. Sajjadi</a>, 
-              <a href="http://www.cvlibs.net/">Andreas Geiger</a>,
-              <a href="http://www2.informatik.uni-freiburg.de/~radwann/">Noha Radwan</a>
-              <br>
-        <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-              <a href="https://m-niemeyer.github.io/regnerf/index.html">project page</a>
-        /
-              <a href="https://arxiv.org/abs/2112.00724">arXiv</a>
-        /
-              <a href="https://www.youtube.com/watch?v=QyyyvA4-Kwc">video</a>
-              <p></p>
-              <p>Regularizing unseen views during optimization enables view synthesis from as few as 3 input images.</p>
-            </td>
-          </tr> 
-
-
-          <tr onmouseout="blocknerf_stop()" onmouseover="blocknerf_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='blocknerf_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/blocknerf_after.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/blocknerf_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function blocknerf_start() {
-                  document.getElementById('blocknerf_image').style.opacity = "1";
-                }
-
-                function blocknerf_stop() {
-                  document.getElementById('blocknerf_image').style.opacity = "0";
-                }
-                blocknerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-							<a href="https://waymo.com/research/block-nerf/">
-                <papertitle>Block-NeRF: Scalable Large Scene Neural View Synthesis</papertitle>
-              </a>
-              <br>
-              <a href="http://matthewtancik.com/">Matthew Tancik</a>,
-              <a href="http://casser.io/">Vincent Casser</a>,
-              <a href="https://sites.google.com/site/skywalkeryxc/">Xinchen Yan</a>,
-              <a href="https://scholar.google.com/citations?user=5mJUkI4AAAAJ&hl=en">Sabeek Pradhan</a>, <br>
-              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-							<a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://www.henrikkretzschmar.com/">Henrik Kretzschmar</a>
-              <br>
-        <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-              <a href="https://waymo.com/research/block-nerf/">project page</a>
-        /
-              <a href="https://arxiv.org/abs/2202.05263">arXiv</a>
-        /
-              <a href="https://www.youtube.com/watch?v=6lGMCAzBzOQ">video</a>
-              <p></p>
-              <p>We can do city-scale reconstruction by training multiple NeRFs with millions of images.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="clipnerf_stop()" onmouseover="clipnerf_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='clipnerf_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/dreamfield_after.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/dreamfield_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function clipnerf_start() {
-                  document.getElementById('clipnerf_image').style.opacity = "1";
-                }
-
-                function clipnerf_stop() {
-                  document.getElementById('clipnerf_image').style.opacity = "0";
-                }
-                clipnerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://ajayj.com/dreamfields">
-                <papertitle>Zero-Shot Text-Guided Object Generation with Dream Fields</papertitle>
-              </a>
-              <br>
-              <a href="https://www.ajayj.com/">Ajay Jain</a>,
-              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>,
-              <a href="https://cs.stanford.edu/~poole/">Ben Poole</a>
-              <br>
-        <em>CVPR</em>, 2022
-              <br>
-              <a href="https://ajayj.com/dreamfields">project page</a>
-        /
-              <a href="https://arxiv.org/abs/2112.01455">arXiv</a>
-        /
-              <a href="https://www.youtube.com/watch?v=1Fke6w46tv4">video</a>
-              <p></p>
-              <p>Supervising the CLIP embeddings of NeRF renderings lets you to generate 3D objects from text prompts.</p>
-            </td>
-          </tr> 
-
-          <tr onmouseout="motionstereo_stop()" onmouseover="motionstereo_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='motionstereo_image'><img src='images/motionstereo_after.png'></div>
-                <img src='images/motionstereo_before.png'>
-              </div>
-              <script type="text/javascript">
-                function motionstereo_start() {
-                  document.getElementById('motionstereo_image').style.opacity = "1";
-                }
-
-                function motionstereo_stop() {
-                  document.getElementById('motionstereo_image').style.opacity = "0";
-                }
-                motionstereo_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://drive.google.com/file/d/1AABFJ3NgD5DAo5JEpEjWZrcQNzjZnvW9/view?usp=sharing">
-                <papertitle>Depth from Motion for Smartphone AR</papertitle>
-              </a>
-              <br>
-              <a href="https://www.linkedin.com/in/valentinjulien/">Julien Valentin</a>,
-              <a href="https://www.linkedin.com/in/adarshkowdle/">Adarsh Kowdle</a>,
-              <strong>Jonathan T. Barron</strong>, <a href="http://nealwadhwa.com">Neal Wadhwa</a>, and others
-              <br>
-              <em>SIGGRAPH Asia</em>, 2018
-              <br>
-              <a href="https://github.com/jonbarron/planar_filter">planar filter toy code</a> / 
-              <a href="data/Valentin2018.bib">bibtex</a>
-              <p></p>
-              <p>Depth cues from camera motion allow for real-time occlusion effects in augmented reality applications.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='portrait_image'><img src='images/portrait_after.jpg'></div>
-                <img src='images/portrait_before.jpg'>
-              </div>
-              <script type="text/javascript">
-                function portrait_start() {
-                  document.getElementById('portrait_image').style.opacity = "1";
-                }
-
-                function portrait_stop() {
-                  document.getElementById('portrait_image').style.opacity = "0";
-                }
-                portrait_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://drive.google.com/file/d/13i6DlS9UhGVKmwslLUFnKBwdxFRVQeQj/view?usp=sharing">
-                <papertitle>Synthetic Depth-of-Field with a Single-Camera Mobile Phone</papertitle>
-              </a>
-              <br>
-              <a href="http://nealwadhwa.com">Neal Wadhwa</a>,
-              <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>,
-              <a href="http://graphics.stanford.edu/~dejacobs/">David E. Jacobs</a>, Bryan E. Feldman, Nori Kanazawa, Robert Carroll,
-              <a href="http://www.cs.cmu.edu/~ymovshov/">Yair Movshovitz-Attias</a>,
-              <strong>Jonathan T. Barron</strong>, Yael Pritch,
-              <a href="http://graphics.stanford.edu/~levoy/">Marc Levoy</a>
-              <br>
-              <em>SIGGRAPH</em>, 2018
-              <br>
-              <a href="https://arxiv.org/abs/1806.04171">arxiv</a> /
-              <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">blog post</a> /
-              <a href="data/Wadhwa2018.bib">bibtex</a>
-              <p></p>
-              <p>Dual pixel cameras and semantic segmentation algorithms can be used for shallow depth of field effects.</p>
-              <p>This system is the basis for "Portrait Mode" on the Google Pixel 2 smartphones</p>
-            </td>
-          </tr>
 
           <tr onmouseout="aperture_stop()" onmouseover="aperture_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -471,24 +174,6 @@
               <a href="data/Srinivasan2018.bib">bibtex</a>
               <p></p>
               <p>Varying a camera's aperture provides a supervisory signal that can teach a neural network to do monocular depth estimation.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/prl.jpg" alt="prl" width="160" height="160">
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://drive.google.com/file/d/13rVuJpcytRdLYCnKpq46g7B7IzSrPQ2P/view?usp=sharing">
-                <papertitle>Parallelizing Reinforcement Learning</papertitle>
-              </a>
-              <br>
-              <strong>Jonathan T. Barron</strong>, <a href="http://www.eecs.berkeley.edu/~dsg/">Dave Golland</a>, <a href="http://www.cs.berkeley.edu/~nickjhay/">Nicholas J. Hay</a>
-              <br>
-              <em>Technical Report</em>, 2009
-              <br>
-              <a href="data/BarronPRL2009.bib">bibtex</a>
-              <p>Markov Decision Problems which lie in a low-dimensional latent space can be decomposed, allowing modified RL algorithms to run orders of magnitude faster in parallel.</p>
             </td>
           </tr>
 
@@ -536,33 +221,7 @@
           </tr>
         </tbody></table>
         <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-					
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
-            <td width="75%" valign="center">
-              <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
-              <br>
-              <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Longuet-Higgins Award Committee Member, CVPR 2021</a>
-              <br>
-              <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
-              <br>
-              <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/cs188.jpg" alt="cs188">
-            </td>
-            <td width="75%" valign="center">
-              <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
-              <br>
-              <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
-              <br>
-              <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
-            </td>
-          </tr>
-					
-
+	
           <tr>
             <td align="center" style="padding:20px;width:25%;vertical-align:middle">
 							<heading>Basically <br> Blog Posts</heading>
