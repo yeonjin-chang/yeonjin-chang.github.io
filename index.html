@@ -62,6 +62,79 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 				
+	    <tr onmouseout="hgnerf_stop()" onmouseover="hgnerf_start()">
+	      <td style="padding:20px;width:25%;vertical-align:middle">
+		<div class="one">
+		  <div class="two" id='hgnerf_image'>
+		    <img src="images/MixNerf_figure1.png" width="160"></div>
+		    <img src='images/MixNerf_figure0.png' width="160">
+		</div>
+		<script type="text/javascript">
+		  function hgnerf_start() {
+		    document.getElementById('hgnerf_image').style.opacity = "1";
+		  }
+
+		  function hgnerf_stop() {
+		    document.getElementById('hgnerf_image').style.opacity = "0";
+		  }
+		  hgnerf_stop()
+		</script>
+	      </td>
+		    <td style="padding:20px;width:75%;vertical-align:middle">
+		    <papertitle>HG-NeRF: Casting an Hourglass as a Bundle of Rays for Few-shot Neural Rendering</papertitle>
+		  </a>
+		  <br>
+		  <a href="https://shawn615.github.io/">Seunghyeon Seo</a>,
+		  <strong>Yeonjin Chang</strong>,
+		  <a href="https://scholar.google.com/citations?user=JAeV59wAAAAJ&hl=en&oi=ao">Jayeon Yoo</a>,
+		  <a href="https://lifrary.github.io/">Seungwoo Lee</a>,
+		  <a href="https://scholar.google.com/citations?user=1BOehSUAAAAJ&hl=en&oi=ao">Hojun Lee</a>,		
+		  <a href="http://mipal.snu.ac.kr/index.php/Nojun_Kwak">Nojun Kwak</a>
+		  <be> Under Review &nbsp
+		  <br>
+		  <p></p>
+		  <p>We cast an hourglass as an additional training ray, which adaptively regularizes the high-frequency components of the samples, and enhance the integrity of training framework by conceptualizing the hourglass as a bundle of flipped diffuse reflection rays, aligning with the Lambertian assumption.</p>
+		</td>
+	      </tr>
+
+	    <tr onmouseout="srtensorf_stop()" onmouseover="srtensorf_start()">
+	      <td style="padding:20px;width:25%;vertical-align:middle">
+		<div class="one">
+		  <div class="two" id='srtensorf_image'>
+		    <img src="images/MixNerf_figure1.png" width="160"></div>
+		    <img src='images/MixNerf_figure0.png' width="160">
+		</div>
+		<script type="text/javascript">
+		  function srtensorf_start() {
+		    document.getElementById('srtensorf_image').style.opacity = "1";
+		  }
+
+		  function srtensorf_stop() {
+		    document.getElementById('srtensorf_image').style.opacity = "0";
+		  }
+		  srtensorf_stop()
+		</script>
+	      </td>
+		    <td style="padding:20px;width:75%;vertical-align:middle">
+		  <a href="https://arxiv.org/abs/2311.03965">
+		    <papertitle>Fast Sun-aligned Outdoor Scene Relighting based on TensoRF</papertitle>
+		  </a>
+		  <br>
+		  <strong>Yeonjin Chang</strong>,
+		  Yearim Kim,
+		  <a href="https://shawn615.github.io/">Seunghyeon Seo</a>,
+		  Jung Yi,
+		  <a href="http://mipal.snu.ac.kr/index.php/Nojun_Kwak">Nojun Kwak</a>
+		  <br>
+	    <em>WACV</em>, 2024 &nbsp
+		  <br>
+		  <a href="https://arxiv.org/abs/2311.03965">arXiv</a>
+		  <p></p>
+		  <p>We simplify outdoor scene relighting for NeRF by aligning with the sun, eliminating the need for environment maps and speeding up the process using a novel cubemap concept within the framework of TensoRF. </p>
+		</td>
+	      </tr>
+
+		
 	    <tr onmouseout="flipnerf_stop()" onmouseover="flipnerf_start()">
 	      <td style="padding:20px;width:25%;vertical-align:middle">
 		<div class="one">
